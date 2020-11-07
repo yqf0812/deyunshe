@@ -1,0 +1,43 @@
+/* compontents/common/videoItem/videoItem.wxss */
+
+.video-box {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.opt {
+  height: 50rpx;
+  border-bottom: 1px solid #ccc;
+  padding: 0 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.comment-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid red;
+  z-index: 999;
+  margin-left: -45%;
+  left: 50%;
+  top: 75rpx;
+  border-radius: 15rpx;
+}
+.sanjiao {
+  position: absolute;
+  border-radius: 10rpx;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  border-style: dotted dotted solid dotted;
+  left: 50%;
+  margin-left: -13px;
+  top: -35rpx;
+}

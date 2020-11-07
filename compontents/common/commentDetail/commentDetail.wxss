@@ -1,0 +1,18 @@
+/* compontents/common/commentDetail/commentDetail.wxss */
+.comment-detail image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50px;
+}
+.comment-detail {
+  padding: 10rpx 20rpx 0 20rpx;
+  margin-top: 40rpx;
+  border-top: 1px solid #ccc;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.comment-detail .comment-input {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

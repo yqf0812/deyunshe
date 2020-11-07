@@ -1,0 +1,6 @@
+<!--compontents/common/comment/comment.wxml-->
+<view class="comment-box">
+  <image class="comment" src="/images/comment.png"></image>
+  <text>999</text>
+</view>
+

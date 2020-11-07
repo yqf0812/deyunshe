@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-like": "/compontents/common/like/like",
+    "v-comment": "/compontents/common/comment/comment",
+    "v-share": "/compontents/common/share/share",
+    "user-info": "/compontents/common/userInfo/userInfo",
+    "video-play": "/compontents/common/videoPlay/videoPlay"
+  }
+}

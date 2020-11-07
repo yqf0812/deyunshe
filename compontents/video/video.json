@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "video-item": "/compontents/common/videoItem/videoItem"
+  }
+}

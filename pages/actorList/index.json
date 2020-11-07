@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ac-list": "/compontents/actor/actorList"
+  }
+}

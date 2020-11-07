@@ -1,0 +1,9 @@
+<!--compontents/video/video.wxml-->
+<view>
+  <scroll-view class="scroll" scroll-y="true">
+    <video-item class="item"></video-item>
+    <video-item class="item"></video-item>
+    <video-item class="item"></video-item>
+  </scroll-view>
+</view>
+

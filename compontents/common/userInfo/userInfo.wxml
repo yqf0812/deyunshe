@@ -1,0 +1,11 @@
+<!--compontents/common/userInfo/userInfo.wxml-->
+<view>
+  <view class="user-info">
+    <image src="/images/firstImg/default.jpg"></image>
+    <text>NeverSettle</text>
+  </view>
+  <view class="video-title">
+    <text>德云社德云社德云社德云社德云社德云社德云社德云社德云社</text>
+  </view>
+</view>
+

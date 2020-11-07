@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comment-item": "/compontents/common/commentItem/commentItem",
+    "comment-input": "/compontents/common/commentInput/commentInput"
+  }
+}

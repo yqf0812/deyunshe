@@ -1,0 +1,17 @@
+/* compontents/actor/index/index.wxss */
+.actor-index {
+  height: 100%;
+  margin-bottom: 120rpx;
+}
+.scroll {
+  height: 100%;
+  margin-bottom: 120rpx;
+}
+.top-img {
+  width: 100%;
+}
+.actor-icon {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 5px;
+}

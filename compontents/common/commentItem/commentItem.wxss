@@ -1,0 +1,14 @@
+/* compontents/common/commentItem/commentItem.wxss */
+.comment-item .user-info {
+  display: flex;
+  align-items: center;
+  margin-top: 25rpx;
+}
+.comment-item .user-info text {
+  margin-left: 10rpx;
+  font-size: 25rpx;
+}
+.comment-item .comment-txt {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+}

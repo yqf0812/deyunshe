@@ -1,0 +1,12 @@
+<!--compontents/common/step/index.wxml-->
+<view class="ac-step" id="step"> 
+  <view class="step-left">
+    <view class="icon-left" wx:for="{{dec}}" wx:key="*this">
+      <image class="img-icon" style="width:48rpx;height:48rpx" src="/images/step1.png"></image>
+      <image src="/images/line.png" wx:if="{{index + 1 !== dec.length}}" class="line"></image>
+    </view>
+  </view>
+  <view class="step-right">
+    <view wx:for="{{dec}}" wx:for-item="value" wx:key="*this" style="height: 100rpx;width:600rpx;position: absolute;margin-left: 10px;top:{{value.top + 'px'}}">{{value.dec}}</view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/commentPage/commentPage.wxss */
+page {
+  height: 100%;
+}
+.comment-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.all-comment {
+  flex: 1;
+}

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/firstPage/firstPage",
+    "pages/index/index",
+    "pages/center/center",
+    "pages/commentPage/commentPage",
+    "pages/actorList/index",
+    "pages/actorInfo/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "德云社",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精选",
+        "iconPath": "/images/Featured.png",
+        "selectedIconPath": "/images/Featured@hover.png"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "text": "个人中心",
+        "iconPath": "/images/center.png",
+        "selectedIconPath": "/images/center@hover.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap7.json"
+}

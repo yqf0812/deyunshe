@@ -1,0 +1,7 @@
+<!--pages/firstPage/firstPage.wxml-->
+<view class="first-page">
+  <image class="background-img" src="/images/firstImg/deyunshe.jpg"></image>
+  <view class="join-button">
+    <text bind:tap="join">入活</text>
+  </view>
+</view>

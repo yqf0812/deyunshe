@@ -1,0 +1,12 @@
+<!--compontents/common/videoItem/videoItem.wxml-->
+<view class="video-box">
+  <user-info></user-info>
+  <video-content></video-content>
+  <video-play bind:getPlayprogress="getPlayprogress"></video-play>
+  <view class="opt">
+    <v-like></v-like>
+    <v-comment bind:tap="toCommentDetail"></v-comment>
+    <v-share></v-share>
+  </view>
+  
+</view>
