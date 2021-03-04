@@ -1,0 +1,50 @@
+<view class="book">
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索icon" confirm-type="search" bindinput="searchIcon"></input>
+    </view>
+  </view>
+  <view class="book-list">
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+    <view class="book-item">
+        <image src="/images/s33614224.jpg" />
+        <text>于谦的小酒馆</text>
+    </view>
+  </view>
+</view>

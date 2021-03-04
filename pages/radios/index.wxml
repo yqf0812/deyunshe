@@ -12,7 +12,7 @@
     />
     <view class="txt">
       <view class="title">
-        郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选
+        郭德纲21年相声精选
       </view>
       <view class="play">
         <text class="cuIcon-musicfill playMusic"></text>
@@ -23,5 +23,17 @@
   <view class="all-play">
     <text class="cuIcon-playfill playfill"></text>
     <text style="margin-left:5px">全部播放(120)</text>
+  </view>
+  <view class="video-list"> 
+    <ul class="xs-list">
+      <li>
+        <span>appreciatefill</span>
+        <view class="opt">
+          <cu-like></cu-like>
+          <cu-like class="mr-left"></cu-like>
+          <cu-like class="mr-left"></cu-like>
+        </view>
+       </li>
+    </ul>
   </view>
 </view>

@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cu-like": "/compontents/common/like/index"
+  }
 }

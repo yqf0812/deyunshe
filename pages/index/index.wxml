@@ -15,6 +15,7 @@
   <van-tab title="演员">
   </van-tab>
   <van-tab title="书籍">
+  <cu-book></cu-book>
   </van-tab>
   <van-tab title="语录">
   </van-tab>

@@ -1,0 +1,23 @@
+/* compontents/books/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.book {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.book-list {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.book-item {
+    width: 200rpx;
+    margin-bottom: 15px;
+}
+.book-item image {
+    width: 100%;
+    height: 250rpx;
+}

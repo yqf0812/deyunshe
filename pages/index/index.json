@@ -4,6 +4,7 @@
     "van-tabs": "/miniprogram_npm/@vant/weapp/tabs/index",
     "cu-video": "/compontents/video/index/index",
     "cu-new": "/compontents/news/index/index",
-    "cu-radio": "/compontents/radio/index/index"
+    "cu-radio": "/compontents/radio/index/index",
+    "cu-book": "/compontents/books/index"
   }
 }

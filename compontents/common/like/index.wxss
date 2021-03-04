@@ -1,0 +1,3 @@
+/* compontents/common/like/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";

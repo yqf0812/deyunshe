@@ -1,5 +1,10 @@
 @import "/colorui/icon.wxss";
 @import "/colorui/main.wxss";
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .header {
   height: 300rpx;
   width: 100%;
@@ -52,4 +57,25 @@
 }
 .playfill {
   font-size: 20px;
+}
+.video-list {
+  flex: 1;
+  overflow-y: auto;
+}
+.xs-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.xs-list li {
+  height: 35px;
+  border-bottom: 1px solid #ccc;
+  line-height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.mr-left {
+  margin-left: 15px;
 }
