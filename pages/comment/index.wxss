@@ -1,0 +1,44 @@
+/* pages/comment/index.wxss */
+.comment-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0081ff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.weui-input {
+  border: 1px solid #fff;
+  padding-left: 10px;
+  flex: 1;
+  height: 60rpx;
+}
+.van-button {
+  flex: 1;
+  margin-left: 5px;
+  height: 60rpx !important;
+}
+.apply {
+  background-color: #f6f5ec;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.apply-user {
+  display: flex;
+  justify-content: flex-end;
+}
+.float-right {
+  float: right;
+}
+.apply-text {
+  margin-left: 10px;
+  color: #0081ff;
+}

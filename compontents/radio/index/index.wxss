@@ -1,0 +1,33 @@
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.search {
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.radio-list {
+  width: 100%;
+  flex: 1;
+  height: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.radio-list:after {
+  content: "";
+  width: 200rpx;
+  height: 0px;
+  visibility: hidden;
+}

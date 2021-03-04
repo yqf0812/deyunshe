@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    time: 3
   },
   join: function() {
     console.log(1)
@@ -24,14 +24,30 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let time = null;
+    let that= this;
+    console.log(1)
+    console.log(that.data.time)
+    let time1 = that.data.time
+    time = setInterval(function() {
+      time1 --
+      that.setData({
+        time: time1
+      })
+      console.log(time1)
+      if (that.data.time === 0) {
+        clearInterval(time)
+        wx.switchTab({
+          url: '/pages/index/index',
+        })
+      }
+    }, 1000)
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**

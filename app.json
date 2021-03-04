@@ -1,16 +1,18 @@
 {
   "pages": [
     "pages/firstPage/firstPage",
+    "pages/menu/index",
     "pages/index/index",
-    "pages/center/center",
-    "pages/commentPage/commentPage",
-    "pages/actorList/index",
-    "pages/actorInfo/index"
+    "pages/center/index",
+    "pages/comment/index",
+    "pages/radioSearch/index",
+    "pages/radios/index"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarBackgroundColor": "#39b54a",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "德云社",
+    "navigationStyle": "custom",
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
@@ -24,12 +26,18 @@
         "selectedIconPath": "/images/Featured@hover.png"
       },
       {
-        "pagePath": "pages/center/center",
+        "pagePath": "pages/center/index",
         "text": "个人中心",
         "iconPath": "/images/center.png",
         "selectedIconPath": "/images/center@hover.png"
       }
     ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index"
   },
   "sitemapLocation": "sitemap7.json"
 }

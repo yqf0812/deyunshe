@@ -1,6 +1,0 @@
-<!--compontents/common/like/like.wxml-->
-<view class="like-box" bind:tap="onLike">
-  <image wx:if="like" class="like" src="{{like?likeSrc:noLikeSrc}}"></image>
-  <text>99</text>
-</view>
-

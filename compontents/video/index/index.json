@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cu-opt": "/compontents/common/operation/index",
+    "van-toast": "@vant/weapp/toast/index"
+  }
+}

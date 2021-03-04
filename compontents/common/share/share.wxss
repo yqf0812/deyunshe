@@ -1,5 +1,0 @@
-/* compontents/common/share/share.wxss */
-.share {
-  width: 40rpx;
-  height: 40rpx;
-}

@@ -1,8 +1,9 @@
 {
   "usingComponents": {
-    "dy-video": "/compontents/video/video",
-    "dy-actor": "/compontents/actor/index/index",
     "van-tab": "/miniprogram_npm/@vant/weapp/tab/index",
-    "van-tabs": "/miniprogram_npm/@vant/weapp/tabs/index"
+    "van-tabs": "/miniprogram_npm/@vant/weapp/tabs/index",
+    "cu-video": "/compontents/video/index/index",
+    "cu-new": "/compontents/news/index/index",
+    "cu-radio": "/compontents/radio/index/index"
   }
 }

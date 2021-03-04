@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -28,7 +28,6 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
@@ -48,12 +47,6 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
@@ -66,37 +59,32 @@
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "index",
+          "name": "pages/menu/index",
+          "pathName": "pages/menu/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
           "pathName": "pages/index/index",
           "query": "",
           "scene": null
         },
         {
-          "id": -1,
-          "name": "detail",
-          "pathName": "pages/commentPage/commentPage",
+          "name": "pages/comment/index",
+          "pathName": "pages/comment/index",
           "query": "",
           "scene": null
         },
         {
-          "id": -1,
-          "name": "actor",
-          "pathName": "pages/index/index",
+          "name": "pages/radioSearch/index",
+          "pathName": "pages/radioSearch/index",
           "query": "",
           "scene": null
         },
         {
-          "id": -1,
-          "name": "pages/actorList/index",
-          "pathName": "pages/actorList/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "pages/actorInfo/index",
-          "pathName": "pages/actorInfo/index",
+          "name": "pages/radios/index",
+          "pathName": "pages/radios/index",
           "scene": null
         }
       ]

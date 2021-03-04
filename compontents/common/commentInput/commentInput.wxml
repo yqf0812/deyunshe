@@ -1,4 +1,0 @@
-<!--compontents/common/commentInput/commentInput.wxml-->
-<view class="comment-input-box">
-  <input class="weui-input" type="text" placeholder="评论..."></input>
-</view>

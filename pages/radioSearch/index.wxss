@@ -1,0 +1,23 @@
+/* pages/radioSearch/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.searchPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.search-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.search-content:after {
+  content: "";
+  width: 200rpx;
+  height: 0px;
+  visibility: hidden;
+}

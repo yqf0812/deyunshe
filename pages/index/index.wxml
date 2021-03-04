@@ -1,18 +1,22 @@
 <!--pages/index/index.wxml-->
+<cu-custom class="custom-bar" bgColor="bg-gradual-blue"><view slot="content">德云小剧场</view></cu-custom>
 <van-tabs class="video-tab" swipeable>
-  <van-tab class="tab-item" title="视频">
-    <!-- <dy-video></dy-video> -->
-    <view class="tab-item-contant">
-      <dy-video></dy-video>
-    </view>
+  <van-tab class="tab-item" title="视频" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <cu-video class="content" ifScroll="{{ifScroll}}"></cu-video>
   </van-tab>
-  <van-tab title="图片">内容 2</van-tab>
-  <van-tab title="斗笑社">内容 3</van-tab>
-  <van-tab title="演员" class="tab-item">
-    <view class="tab-item-contant">
-      <dy-actor></dy-actor>
-    </view>
+  <van-tab title="图片">
   </van-tab>
-  <van-tab title="书籍">内容 4</van-tab>
-  <van-tab title="语录">内容 4</van-tab>
+  <van-tab title="新闻">
+    <cu-new></cu-new>
+  </van-tab>
+  <van-tab class="tab-item" title="电台">
+    <cu-radio></cu-radio>
+  </van-tab>
+  <van-tab title="演员">
+  </van-tab>
+  <van-tab title="书籍">
+  </van-tab>
+  <van-tab title="语录">
+  </van-tab>
 </van-tabs>
+<van-toast id="van-toast"/>

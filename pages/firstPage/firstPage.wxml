@@ -1,7 +1,7 @@
 <!--pages/firstPage/firstPage.wxml-->
 <view class="first-page">
-  <image class="background-img" src="/images/firstImg/deyunshe.jpg"></image>
-  <view class="join-button">
-    <text bind:tap="join">入活</text>
-  </view>
+  <image class="background-img" src="http://127.0.0.1:3000/images/bg2.jpg"></image>
+  <text class="time">
+    {{time}}
+  </text>
 </view>

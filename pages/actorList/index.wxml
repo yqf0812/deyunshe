@@ -1,4 +1,0 @@
-<!--pages/actorList/index.wxml-->
-<view>
-  <ac-list dec="{{data}}"></ac-list>
-</view>

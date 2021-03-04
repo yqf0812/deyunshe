@@ -25,3 +25,9 @@
   font-size: 30rpx;
   font-weight: 800;
 }
+.time {
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  font-size: 20px;
+}

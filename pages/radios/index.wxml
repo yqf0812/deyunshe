@@ -1,0 +1,27 @@
+<view class="list">
+  <cu-custom class="custom-bar" bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="content">电台</view></cu-custom>
+  <view class="header">
+    <view class="bg" style="background-image:url(https://img.yzcdn.cn/vant/cat.jpeg);"></view>
+    <view class="bg-mask"></view>
+    <van-image
+    class="avatar"
+      width="200rpx"
+      height="200rpx"
+      fit="cover"
+      src="https://img.yzcdn.cn/vant/cat.jpeg"
+    />
+    <view class="txt">
+      <view class="title">
+        郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选郭德纲21年相声精选
+      </view>
+      <view class="play">
+        <text class="cuIcon-musicfill playMusic"></text>
+        <text style="margin-left: 5px">99999</text>
+      </view>
+    </view>
+  </view>
+  <view class="all-play">
+    <text class="cuIcon-playfill playfill"></text>
+    <text style="margin-left:5px">全部播放(120)</text>
+  </view>
+</view>

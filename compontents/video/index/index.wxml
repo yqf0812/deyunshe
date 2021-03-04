@@ -1,0 +1,22 @@
+<view class="cu-card dynamic {{'video-' + item.vid}}" wx:for="{{videoList}}" wx:key="index" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+        <view class="content flex-sub">
+          <view>{{item.auth}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{item.createTime}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">
+      {{item.title}}
+    </view>
+    <view class="grid flex-sub padding-lr">
+      <video id="{{'modelV'+item.vid}}" class="video" src="{{item.url}}" bindplay="bindplay" data-vid="{{item.vid}}"></video>
+    </view>
+    <cu-opt playNum="{{item.playnum}}" id='opt'></cu-opt>
+  </view>
+</view>

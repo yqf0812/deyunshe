@@ -1,9 +1,0 @@
-<!--compontents/common/commentItem/commentItem.wxml-->
-<view class="comment-item">
-  <view class="user-info">
-    <image src="/images/firstImg/default.jpg"></image>
-    <text>Neverettle</text>
-  </view>
-  <text class="comment-txt">我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论我是第一个评论</text>
-</view>
-

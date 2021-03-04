@@ -1,6 +1,0 @@
-/* compontents/video/video.wxss */
-.scroll {
-  height: 100%;
-  padding-bottom: 120rpx;
-  background-color: #ccc;
-}

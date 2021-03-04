@@ -1,0 +1,6 @@
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+page {
+  width: 100%;
+  height: 100%;
+}

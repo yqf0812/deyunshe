@@ -1,0 +1,16 @@
+
+<view class="searchPage">
+  <cu-custom class="custom-bar" bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="content">电台</view></cu-custom>
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="搜索icon" confirm-type="search" bindinput="searchIcon"></input>
+    </view>
+  </view>
+  <view class="search-content">
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+  </view>
+</view>

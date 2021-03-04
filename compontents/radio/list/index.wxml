@@ -1,0 +1,6 @@
+<view class="list-card" bindtap="goList">
+  <view class="play-num">
+    <text class="cuIcon-musicfill playMusic"></text>
+    <text style="margin-left: 5px">99999</text>
+  </view>
+</view>

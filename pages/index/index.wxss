@@ -1,21 +1,25 @@
 /* pages/index/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
 page {
-  height: 100%;
-}
-.video-tab {  
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
-.video-tab .van-tabs {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.video-tab .van-tabs .van-tabs__content {
+.video-tab {
   flex: 1;
+  height: 0;
 }
-.tab-item-contant {
-  height: 100vh;
+.van-tabs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.van-tabs__content {
+  flex: 1;
+  height: 0;
+  overflow-y: auto !important;
+}
+.tab-item {
+  flex: 1;
+  height: 0;
 }

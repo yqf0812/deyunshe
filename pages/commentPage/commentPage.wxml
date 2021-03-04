@@ -1,6 +1,0 @@
-<!--pages/commentPage/commentPage.wxml-->
-<view class="comment-page">
-  <video-play startTime="{{startTime}}"></video-play>
-  <user-info></user-info>
-  <all-comment class="all-comment"></all-comment>
-</view>

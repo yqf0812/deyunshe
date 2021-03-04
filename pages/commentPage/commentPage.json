@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "user-info": "/compontents/common/userInfo/userInfo",
-    "video-play": "/compontents/common/videoPlay/videoPlay",
-    "all-comment": "/compontents/common/commentDetail/commentDetail"
-  }
-}

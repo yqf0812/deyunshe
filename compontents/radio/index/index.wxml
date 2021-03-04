@@ -1,0 +1,15 @@
+<view class="radio">
+  <view class="search-box">
+    <view class="search" bindtap="search">
+      <text class="cuIcon-search"></text>
+      <text style="margin-left:10px">请输入关键字</text>
+    </view>
+  </view>
+  <view class="radio-list">
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+    <cu-radiolist></cu-radiolist>
+  </view>
+</view>
