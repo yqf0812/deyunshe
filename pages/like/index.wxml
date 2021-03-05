@@ -1,0 +1,17 @@
+<view class="likePage">
+  <cu-custom class="custom-bar" bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="content">喜欢</view></cu-custom>
+  <view class="main">
+    <view class="left">
+        <van-sidebar active-key="{{ activeKey }}">
+            <van-sidebar-item title="视频" />
+            <van-sidebar-item title="图片" />
+            <van-sidebar-item title="新闻" />
+            <van-sidebar-item title="电台" />
+            <van-sidebar-item title="演员" />
+            <van-sidebar-item title="书籍" />
+            <van-sidebar-item title="语录" />
+        </van-sidebar>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>

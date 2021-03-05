@@ -1,1 +1,61 @@
 /* pages/center/index.wxss */
+.user-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 750rpx;
+  background: url('https://hbimg.huabanimg.com/4a4946b84e89a8a8643a477d9cdad61c22113aa12a6bda-gBwikF_fw658/format/webp');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  width: 80%;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu ul li {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul li view {
+  display: flex;
+  align-items: center;
+}
+.menu ul li image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  animation:rotate 1s infinite;
+}
+.menu ul li image:nth-child(3) {
+  margin-right: -5px;
+}
+@keyframes rotate{
+  from{ -webkit-transform:rotateY(360deg);}
+  to{ -webkit-transform:rotateY(0deg);}     
+}
+.bottom {
+  height: 85px;
+  background: url('https://hbimg.huabanimg.com/e37204d85b7d055c17b219e1634f50ff8bf51c5d166cb1-U6dCHY_fw658/format/webp');
+  /* background-position: 1px -1px; */
+  background-size: 100% 100%;
+}

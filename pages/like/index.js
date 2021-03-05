@@ -1,19 +1,18 @@
-// pages/center/index.js
+// pages/like/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    islogin: false,
-    showMoney: false
+    activeKey:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      
+
   },
 
   /**
@@ -55,7 +54,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(1)
+
   },
 
   /**
@@ -63,15 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  showMoney() {
-    this.setData({
-      showMoney: true
-    })
-  },
-  goLike() {
-    wx.navigateTo({
-      url: '/pages/like/index',
-    })
   }
 })
