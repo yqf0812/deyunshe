@@ -12,6 +12,13 @@
             <van-sidebar-item title="语录" />
         </van-sidebar>
     </view>
-    <view class="right"></view>
+    <view class="right">
+        <view class="content">
+            <view class="no-data">
+                <!-- <image src="/images/nodata.svg" /> -->
+                你还没有喜欢的东西哦~~~
+            </view>
+        </view>
+    </view>
   </view>
 </view>
