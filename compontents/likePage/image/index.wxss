@@ -1,0 +1,6 @@
+/* compontents/likePage/image/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.image-box {
+  width: 100%;
+}

@@ -1,11 +1,22 @@
 // pages/like/index.js
+import Dialog from '../../miniprogram_npm/@vant/weapp/dialog/dialog';
+import Toast from '../../miniprogram_npm/@vant/weapp/toast/toast';
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    activeKey:0
+    activeKey:0,
+    data: [1],
+    touchStart: 0,
+    touchEnd: 0,
+    showChanel: false,
+    checkAll: false,
+    isAll: 0,
+    allChange: false,
+    list: [],
+    typeList: [1, 2, 3, 4, 5, 6, 7],
   },
 
   /**
@@ -62,5 +73,86 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  touchStart: function(e){
+    var that=this;
+    that.setData({
+      touchStart: e.timeStamp
+    })
+  },
+  touchEnd: function(e){
+    var that=this;
+    that.setData({
+      touchEnd: e.timeStamp
+    })
+  },
+  pressTap: function() {
+    let that = this;
+    let touchTime = that.data.touchEnd - that.data.touchStart;
+    if (touchTime > 1000) {
+      that.setData({
+        showChanel: true
+      })
+    }
+  },
+  onChange(e) {
+    let that = this;
+    that.setData({
+      activeKey: e.detail,
+      showChanel: false
+    })
+  },
+  ifAll(e) {
+    let that = this;
+    that.setData({
+      list: e.detail.list
+    })
+    if (e.detail.value === 'all') {
+      that.setData({
+        isAll: 1,
+        allChange: true
+      })
+    } else {
+      that.setData({
+        isAll: 0,
+        allChange: false
+      })
+    }
+  },
+  chanelLike() {
+    let that = this;
+    Dialog.confirm({
+      title: '确认',
+      message: '确定要对这些作品不在喜欢了吗？'
+    }).then(() => {
+      Toast.success('成功文案');
+      that.setData({
+        showChanel: false
+      })
+    }).catch(() => {
+      Toast.fail('失败文案');
+      that.setData({
+        showChanel: false
+      })
+    });
+    if (that.data.isAll) {
+      console.log(that.data.typeList)
+    } else {
+      console.log(that.data.list)
+    }
+  },
+  checkAll(e) {
+    let that = this;
+    if (e.target.dataset.value) {
+      that.setData({
+        checkAll: false,
+        isAll: 0
+      })
+    } else {
+      that.setData({
+        checkAll: true,
+        isAll: 1
+      })
+    }
   }
 })

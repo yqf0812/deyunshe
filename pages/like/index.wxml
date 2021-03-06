@@ -1,11 +1,15 @@
 <view class="likePage">
   <cu-custom class="custom-bar" bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="content">喜欢</view></cu-custom>
+  <view class="tip bg-grey light">
+      Tip:长按可取消喜欢哦~~
+  </view>
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
   <view class="main">
     <view class="left">
-        <van-sidebar active-key="{{ activeKey }}">
+        <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
             <van-sidebar-item title="视频" />
             <van-sidebar-item title="图片" />
-            <van-sidebar-item title="新闻" />
             <van-sidebar-item title="电台" />
             <van-sidebar-item title="演员" />
             <van-sidebar-item title="书籍" />
@@ -13,10 +17,29 @@
         </van-sidebar>
     </view>
     <view class="right">
-        <view class="content">
-            <view class="no-data">
-                <!-- <image src="/images/nodata.svg" /> -->
-                你还没有喜欢的东西哦~~~
+        <view class="content1">
+            <view class="no-data" wx:if="{{data.length < 0}}">
+                 <image src="/images/nodata.svg" />
+                你还没有任何喜欢的东西哦~~~
+            </view>
+            <view class="data" wx:if="{{data.length > 0}}" 
+                bindtouchstart='touchStart'
+                bindtouchend='touchEnd'
+                bindtap='pressTap'>
+                <view class="chanel" wx:if="{{showChanel}}"> 
+                        <label class="checkbox">
+                            <checkbox checked="{{allChange}}" data-value="{{isAll}}" bindtap="checkAll"/> 全选
+                        </label>
+                    <button bindtap="chanelLike" class="cu-btn round bg-yellow shadow">取消喜欢</button>
+                </view>
+                <!-- 视频 -->
+                <cu-likeVideo typeList="{{typeList}}" bind:checkboxChange="ifAll" checkAll="{{checkAll}}" class="overflowY" showChanel="{{showChanel}}" wx:if="{{activeKey === 0}}"></cu-likeVideo>
+                <!-- 图片 -->
+                <cu-likeImage showChanel="{{showChanel}}" wx:if="{{activeKey === 1}}"></cu-likeImage>
+                <!-- 电台 -->
+                <cu-likeRadio showChanel="{{showChanel}}" wx:if="{{activeKey === 2}}"></cu-likeRadio>
+                <!-- 演员 -->
+                <cu-likeActor showChanel="{{showChanel}}" wx:if="{{activeKey === 3}}"></cu-likeActor>
             </view>
         </view>
     </view>

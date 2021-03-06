@@ -1,0 +1,11 @@
+<view class="video-box">
+  <checkbox-group bindchange="checkboxChange">
+    <view wx:for="{{typeList}}" style="width: 100%;margin-top: 10px;display:flex;align-items: center;">
+      <label class="checkbox" wx:if="{{showChanel}}">
+        <checkbox value="{{item}}" checked="{{checkAll}}" style="margin-right: 5px" />
+      </label>
+      <video src="https://www.w3school.com.cn/i/movie.ogg">
+      </video>
+    </view>
+  </checkbox-group>
+</view>

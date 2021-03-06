@@ -1,6 +1,12 @@
 {
   "usingComponents": {
     "van-sidebar": "@vant/weapp/sidebar/index",
-    "van-sidebar-item": "@vant/weapp/sidebar-item/index"
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "cu-likeVideo": "/compontents/likePage/video/index",
+    "cu-likeImage": "/compontents/likePage/image/index",
+    "cu-likeRadio": "/compontents/likePage/radio/index",
+    "cu-likeActor": "/compontents/likePage/actor/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-toast": "@vant/weapp/toast/index"
   }
 }

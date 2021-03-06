@@ -1,0 +1,14 @@
+<view class="radio-box" style="width:100%" wx:for="{{arr}}">
+  <checkbox-group bindchange="checkboxChange" wx:if="{{showChanel}}">
+    <label class="checkbox">
+      <checkbox value="cb" style="margin-right: 5px" />
+    </label>
+  </checkbox-group>
+  <view class="item">
+    <view class="item-left">
+      <image src="/images/radio-icon.png"></image>
+      <text style="margin-left: 5px">赛道哈哈哈电话</text>
+    </view>
+    <text class="cuIcon-playfill text-gray item-right"></text>
+  </view>
+</view>

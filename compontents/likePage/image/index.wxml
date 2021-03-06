@@ -1,0 +1,11 @@
+<view class="image-box">
+  <view style="width: 100%;margin-top: 10px;display:flex;align-items: center;">
+    <checkbox-group bindchange="checkboxChange" wx:if="{{showChanel}}">
+      <label class="checkbox">
+        <checkbox value="cb" style="margin-right: 5px"/>
+      </label>
+    </checkbox-group>
+    <image style="width:100%"
+      src="https://hbimg.huabanimg.com/fafe80edafc5b8e37df7c6eaccc8a8082766b3f165af-8jeAlg_fw658/format/webp"></image>
+  </view>
+</view>
