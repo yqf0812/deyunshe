@@ -1,0 +1,38 @@
+/* compontents/common/play/index.wxss */
+.play-opt {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: red;
+}
+.opt {
+  left: 50px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: row-reverse; */
+}
+.opt-box {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.opt image {
+  width: 24px;
+  height: 24px;
+}
+.play-box {
+  width: 200px;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  align-items: center;
+}
+@keyframes open {
+  from {width:0px;}
+  to {width:150px;}
+}

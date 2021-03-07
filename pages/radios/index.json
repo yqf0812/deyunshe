@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "cu-like": "/compontents/common/like/index"
+    "cu-like": "/compontents/common/like/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "cu-play": "/compontents/common/play/index"
   }
 }

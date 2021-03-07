@@ -1,0 +1,39 @@
+<view class="img-info">
+  <cu-custom class="custom-bar" bgColor="bg-gradual-orange" isBack="{{true}}">
+    <view slot="content">图片详情</view>
+  </cu-custom>
+  <view class="img-content">
+    <image class="img" src="{{url}}" mode="widthFix"></image>
+    <view class="info">
+      <view class="introduction">
+        the action of introducing something.
+        issues arising from the introduction of new technology
+      </view>
+      <view class="avatar">
+        <view class="cu-avatar round sm"
+          style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+        <view class="nick">海绵宝宝</view>
+      </view>
+    </view>
+    <view class="comment">
+      <view class="title">全部评论</view>
+      <view class="comment-info" wx:for="{{10}}">
+        <view class="avatar">
+          <view class="cu-avatar round sm"
+            style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+          <view class="nick">海绵宝宝</view>
+        </view>
+        <view class="comment-txt">
+          the action of introducing something.
+        issues arising from the introduction of new technology
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="input-comment1">
+  <input placeholder="写出令你心动的那一瞬间" class="solid-bottom input" maxlength="300" cursor-spacing="10" bindconfirm="confirm" confirm-type="send"></input>
+  <view>
+    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+  </view>
+</view>

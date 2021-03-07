@@ -1,4 +1,6 @@
+
 <view class="list">
+  <cu-play rowReverse="{{rowReverse}}" bindtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd" style="position: absolute;top:{{buttonTop}}px;left:{{buttonLeft}}px;z-index:99999999" wx:if="{{isPlay}}" bind:pausePlay="pausePlay"></cu-play>
   <cu-custom class="custom-bar" bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="content">电台</view></cu-custom>
   <view class="header">
     <view class="bg" style="background-image:url(https://img.yzcdn.cn/vant/cat.jpeg);"></view>
@@ -20,14 +22,18 @@
       </view>
     </view>
   </view>
-  <view class="all-play">
+  <view class="all-play" bindtap="allPlay">
     <text class="cuIcon-playfill playfill"></text>
-    <text style="margin-left:5px">全部播放(120)</text>
+    <text style="margin-left:5px">全部播放({{radioList.length}})</text>
   </view>
   <view class="video-list"> 
     <ul class="xs-list">
-      <li>
-        <span>appreciatefill</span>
+      <li wx:for="{{radioList}}">
+        <view class="radio-url" data-index='{{index}}' bindtap="playRadio" data-src="{{item.url}}">
+          <text class="cuIcon-playfill lg text-gray" wx:if="{{!item.isPlay}}"></text>
+          <text class="cuIcon-stop lg text-gray" wx:if="{{item.isPlay}}"></text>
+          <text style="margin-left:40rpx" >{{item.name}}</text>
+        </view>
         <view class="opt">
           <cu-like></cu-like>
           <cu-like class="mr-left"></cu-like>
@@ -36,4 +42,5 @@
        </li>
     </ul>
   </view>
+  <van-toast id="van-toast" />
 </view>

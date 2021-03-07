@@ -1,0 +1,13 @@
+<!--compontents/common/play/index.wxml-->
+<view class="play-box" style="flex-direction:{{rowReverse}}">
+  <view class="play-opt" bindtap="show"></view>
+  <view class="opt" style="flex-direction:{{rowReverse}}" wx:if="{{show}}">
+    <view class="opt-box">
+      <image src="/images/prev.png"></image>
+      <image src="/images/playradio.png"></image>
+      <image src="/images/next.png"></image>
+    </view>
+    <image src="/images/close.png" bindtap="pause"></image>
+  </view>
+</view>
+

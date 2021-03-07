@@ -7,7 +7,8 @@
     "pages/comment/index",
     "pages/radioSearch/index",
     "pages/radios/index",
-    "pages/like/index"
+    "pages/like/index",
+    "pages/imgInfo/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

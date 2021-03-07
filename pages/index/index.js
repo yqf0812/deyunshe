@@ -1,6 +1,20 @@
 // pages/index/index.js
 // import Toast from '../../miniprogram_npm/@vant/weapp/toast/toast';
+const playOpt = require('./../../util/play');
+const app = getApp();
 Page({
+  buttonStart(e) {
+    let that = this;
+    playOpt.buttonStart(e, that);
+  },
+  buttonMove(e) {
+    let that = this;
+    playOpt.buttonMove(e, that);
+  },
+  buttonEnd(e) {
+    let that = this;
+    playOpt.buttonEnd(e, that);
+  },
   // touchStart(e) { // 页面滑动事件开始
   //   console.log(e)
   //   this.setData({
@@ -49,14 +63,23 @@ Page({
   data: {
     touchx: 0,
     touchy: 0,
-    ifScroll: false
+    ifScroll: false,
+    windowHeight: 0,
+    windowWidth: 0,
+    buttonTop: 100,
+    buttonLeft: 0,
+    rowReverse: '',
+    isPlay: app.globalData.isPlay
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(app.globalData)
+    this.setData({
+      windowHeight: app.globalData.windowHeight,
+      windowWidth: app.globalData.windowWidth
+    })
   },
 
   /**
@@ -70,7 +93,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    console.log(app.globalData)
+    this.setData({
+      isPlay: app.globalData.isPlay
+    })
   },
 
   /**

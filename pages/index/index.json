@@ -5,6 +5,8 @@
     "cu-video": "/compontents/video/index/index",
     "cu-new": "/compontents/news/index/index",
     "cu-radio": "/compontents/radio/index/index",
-    "cu-book": "/compontents/books/index"
+    "cu-book": "/compontents/books/index",
+    "cu-img": "/compontents/img/index/index",
+    "cu-play": "/compontents/common/play/index"
   }
 }

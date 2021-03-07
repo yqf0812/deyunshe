@@ -8,7 +8,9 @@ App({
     }
     wx.getSystemInfo({
       success: e => {
-        console.log(e.language);
+        console.log(e);
+        this.globalData.windowWidth = e.windowWidth;
+        this.globalData.windowHeight = e.windowHeight;
         this.globalData.StatusBar = e.statusBarHeight;
         let capsule = wx.getMenuButtonBoundingClientRect();
         if (capsule) {
@@ -97,6 +99,7 @@ App({
         color: '#ffffff'
       },
     ],
-    userId: '12345678'
-  }
+    userId: '12345678',
+    isPlay: false
+  },
 })

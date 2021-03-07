@@ -1,0 +1,37 @@
+/* compontents/img/index/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.image-box {
+  column-count: 2;
+  column-gap: 10rpx;
+  padding: 20rpx;
+}
+.item {
+  break-inside: avoid;
+  margin-bottom: 20rpx;
+}
+.info {
+  background: #fff;
+  padding: 10rpx;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.nick {
+  flex: 1;
+  margin-left: 20rpx;
+}
+.opt {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* image {
+  height: 500px0;
+} */
