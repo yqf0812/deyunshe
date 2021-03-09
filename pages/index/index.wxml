@@ -15,6 +15,7 @@
     <cu-radio></cu-radio>
   </van-tab>
   <van-tab title="演员">
+  <cu-actor></cu-actor>
   </van-tab>
   <van-tab title="书籍">
   <cu-book></cu-book>
