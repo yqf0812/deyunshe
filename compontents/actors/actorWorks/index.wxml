@@ -1,0 +1,10 @@
+<view class="works">
+  <van-sidebar active-key="{{ activeKey }}" bind:change="onChange">
+    <van-sidebar-item title="相声" />
+    <van-sidebar-item title="影视" />
+    <van-sidebar-item title="音乐" />
+  </van-sidebar>
+  <view class="content">
+    
+  </view>
+</view>

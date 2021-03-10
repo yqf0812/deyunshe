@@ -1,0 +1,12 @@
+/* compontents/actorAtlas/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.atlas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+image {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}

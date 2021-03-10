@@ -1,0 +1,9 @@
+/* compontents/actorWorks/index.wxss */
+.works {
+  display: flex;
+  height: 100%;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+}

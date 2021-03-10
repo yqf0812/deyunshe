@@ -8,7 +8,8 @@
     "pages/radioSearch/index",
     "pages/radios/index",
     "pages/like/index",
-    "pages/imgInfo/index"
+    "pages/imgInfo/index",
+    "pages/actor/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

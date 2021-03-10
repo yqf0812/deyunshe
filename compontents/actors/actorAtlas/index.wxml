@@ -1,0 +1,4 @@
+<view class="atlas">
+  <image mode="widthFix" bindtap="preview" data-src="{{item.url}}" wx:for="{{swiperList}}" src="{{item.url}}"></image>
+</view>
+

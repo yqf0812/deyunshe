@@ -1,0 +1,6 @@
+/* compontents/actorInfo/index.wxss */
+.info-txt {
+  height: 100%;
+  padding: 40rpx;
+  overflow-y: auto;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "cu-actorInfo": "/compontents/actors/actorInfo/index",
+    "cu-actorAtlas": "/compontents/actors/actorAtlas/index",
+    "cu-actorWorks": "/compontents/actors/actorWorks/index"
+  }
+}

@@ -1,0 +1,24 @@
+<view class="actor-info">
+  <cu-custom class="custom-bar" bgColor="bg-gradual-blue" isBack="{{true}}">
+    <view slot="content">岳云鹏</view>
+  </cu-custom>
+  <view class="header">
+    <view class="cu-avatar radius margin-left xl" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg);"></view>
+  </view>
+  <van-tabs class="tabs" active="{{active}}" swipeable bind:change="onChange">
+    <van-tab class="tab-item" title="简介">
+      <!-- <cu-actorInfo></cu-actorInfo> -->
+    </van-tab>
+    <van-tab title="图集">
+      <!-- <cu-actorAtlas></cu-actorAtlas> -->
+    </van-tab>
+    <van-tab class="tab-item" title="作品">
+      <!-- <cu-actorWorks></cu-actorWorks> -->
+    </van-tab>
+  </van-tabs>
+  <view class="tab-cont">
+    <cu-actorInfo wx:if="{{active === 0}}"></cu-actorInfo>
+    <cu-actorAtlas wx:if="{{active === 1}}"></cu-actorAtlas>
+    <cu-actorWorks wx:if="{{active === 2}}"></cu-actorWorks>
+  </view>
+</view>

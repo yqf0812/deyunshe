@@ -1,0 +1,19 @@
+/* pages/actor/index.wxss */
+.actor-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 200px;
+  background: url('https://hbimg.huabanimg.com/47f5c45f324fff0022ab271ddc6ed4ba47252edc16306e-WLAgbq_fw658/format/webp');
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40rpx;
+}
+.tab-cont {
+  flex: 1;
+  overflow: auto;
+}

@@ -51,6 +51,12 @@
         {
           "name": "pages/like/index",
           "pathName": "pages/like/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/actor/index",
+          "pathName": "pages/actor/index",
           "scene": null
         }
       ]

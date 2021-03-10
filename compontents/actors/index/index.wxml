@@ -15,17 +15,16 @@
     </view>
     <view class="branch">
         <view class="top">
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
+            <image bindtap="actorInfo" src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
         </view>
         <view class="top">
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
-            <image src="/images/1615281646398445副本.png"></image>
+            <image src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
+            <image src="/images/1615281646398445.png"></image>
         </view>
-        
     </view>
 </view>
