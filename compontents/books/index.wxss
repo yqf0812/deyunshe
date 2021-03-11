@@ -31,3 +31,7 @@
     background: #000;
     margin-right: 20rpx;
 }
+.history-label {
+    display: flex;
+    flex-wrap: wrap;
+}

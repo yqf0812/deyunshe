@@ -18,6 +18,35 @@
             <view class="line"></view>
             <text>历史记录</text>
         </view>
+        <view class="history-label">
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">郭论</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">郭论</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">郭论</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">郭论</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">于谦的酒馆</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">于谦的酒馆</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">于谦的酒馆</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">于谦的酒馆</view>
+            </view>
+            <view class="padding-xs">
+                <view class="cu-tag bg-blue light">于谦的酒馆</view>
+            </view>
+        </view>
         <view></view>
     </view>
   </view>
