@@ -19,7 +19,6 @@ Component({
    */
   methods: {
     onChange(e) {
-      console.log(e)
       this.setData({
         activeKey: e.detail
       })

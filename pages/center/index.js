@@ -13,7 +13,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      
+      wx.login({
+        success: res => {
+          console.log(res)
+        }
+      })
   },
 
   /**
@@ -72,6 +76,13 @@ Page({
   goLike() {
     wx.navigateTo({
       url: '/pages/like/index',
+    })
+  }, 
+  info() {
+    wx.getUserInfo({
+      success: res => {
+        console.log(res)
+      }
     })
   }
 })

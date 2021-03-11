@@ -4,7 +4,7 @@
       <view wx:if="{{isLogin}}" class="cu-avatar xl round margin-left" 
       style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg);"></view>
       <view wx:else class="cu-avatar xl round margin-left">
-        <text class="avatar-text">请登录</text>
+        <button  open-type="getUserInfo" bindgetuserinfo="info" class="avatar-text">请登录</button>
       </view>
       <text wx:if="{{isLogin}}" class="nike">大云素使-拉克丝</text>
       <text wx:if="{{isLogin}}" class="reg-date">

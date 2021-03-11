@@ -2,49 +2,23 @@
   <view class="cu-bar bg-white search">
     <view class="search-form round">
       <text class="cuIcon-search"></text>
-      <input type="text" placeholder="搜索icon" confirm-type="search" bindinput="searchIcon"></input>
+      <input type="text" placeholder="搜索" confirm-type="search" bindfocus="searchBookHandler"></input>
+      <button class="cu-btn round">取消</button>
     </view>
   </view>
-  <view class="book-list">
+  <view class="book-list" wx:if="{{showBookList}}">
     <view class="book-item">
         <image src="/images/s33614224.jpg" />
         <text>于谦的小酒馆</text>
     </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
-    </view>
-    <view class="book-item">
-        <image src="/images/s33614224.jpg" />
-        <text>于谦的小酒馆</text>
+  </view>
+  <view class="book-list" wx:if="{{!showBookList}}"> 
+    <view class="history-search">
+        <view class="history-title">
+            <view class="line"></view>
+            <text>历史记录</text>
+        </view>
+        <view></view>
     </view>
   </view>
 </view>
