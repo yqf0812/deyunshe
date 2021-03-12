@@ -1,0 +1,18 @@
+<view class="quotation">
+  <view class="cu-chat">
+    <view class="cu-item pos" wx:for="{{5}}">
+      <view class="cu-avatar radius" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big143004.jpg);"></view>
+      <view class="main">
+        <view class="content shadow"
+        data-index="{{index}}"        bindtouchstart='touchStart'
+        bindtouchend='touchEnd'
+        bindtap='pressTap'>
+          <text>喵喵喵！喵喵喵！喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵喵喵喵！喵喵喵</text>
+        </view>
+      </view>
+      <view class="opt" wx:if="{{showOpt && index === active}}">
+        <text bindtap="closeOpt" class="cuIcon-roundclosefill lg text-gray close"></text>
+      </view>
+    </view>
+  </view>
+</view>

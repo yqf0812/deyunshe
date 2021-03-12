@@ -1,0 +1,24 @@
+/* compontents/quotation/index/index.wxss */
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+.quotation {
+  padding: 20rpx;
+}
+.pos {
+  position: relative;
+}
+.opt {
+  position: absolute;
+  width: 300rpx;
+  height: 100rpx;
+  background: red;
+  border-radius: 10px;
+  left: 200rpx;
+  top: 0;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: -20rpx;
+  font-size: 20px !important;
+}

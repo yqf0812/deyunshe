@@ -21,6 +21,7 @@
   <cu-book class="content"></cu-book>
   </van-tab>
   <van-tab title="语录">
+    <cu-quotation></cu-quotation>
   </van-tab>
 </van-tabs>
 <van-toast id="van-toast"/>

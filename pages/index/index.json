@@ -8,6 +8,7 @@
     "cu-book": "/compontents/books/index",
     "cu-img": "/compontents/img/index/index",
     "cu-play": "/compontents/common/play/index",
-    "cu-actor": "/compontents/actors/index/index"
+    "cu-actor": "/compontents/actors/index/index",
+    "cu-quotation": "/compontents/quotation/index/index"
   }
 }

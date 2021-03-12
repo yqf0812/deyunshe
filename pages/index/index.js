@@ -15,48 +15,6 @@ Page({
     let that = this;
     playOpt.buttonEnd(e, that);
   },
-  // touchStart(e) { // 页面滑动事件开始
-  //   console.log(e)
-  //   this.setData({
-  //     touchx: e.changedTouches[0].clientX,
-  //     touchy: e.changedTouches[0].clientY,
-  //     ifScroll: true
-  //   })
-  // },
-  // touchEnd(e) { // 页面滑动事件结束
-  //   console.log(e)
-  //   var that = this;
-  //   let x = e.changedTouches[0].clientX;
-  //   let y = e.changedTouches[0].clientY;
-  //   let turn = "";
-  //   if (x - that.data.touchx > 50 && Math.abs(y - that.data.touchy) < 50) {      //右滑
-  //     turn = "right";
-  //   } else if (x - that.data.touchx < -50 && Math.abs(y - that.data.touchy) < 50) {   //左滑
-  //     turn = "left";
-  //   }
-  //   if(y - that.data.touchy > 50 && Math.abs(x - that.data.touchx) < 50){ //下滑
-  //     turn = "down";
-  //   }else if(y - that.data.touchy < -50 && Math.abs(x - that.data.touchx) < 50){ //上滑
-  //     turn="up";
-  //   }
-  //   //根据方向进行操作
-  //   if(turn === 'down'){
-  //     //下滑触发操作
-  //     console.log('down')
-  //   }
-  //   if(turn === 'up'){
-  //     //下滑触发操作
-  //     console.log('up')
-  //     // var query = wx.createSelectorQuery();
-  //     // query.selectAll('.videoItem').boundingClientRect((res) => {
-  //     //   console.log(res)
-  //     // })
-  //     // query.exec((res) => {
-  //     //     var listHeight = res; // 获取list高度
-  //     //     console.log(res)
-  //     // })
-  //   }
-  // },
   /**
    * 页面的初始数据
    */
@@ -69,7 +27,7 @@ Page({
     buttonTop: 100,
     buttonLeft: 0,
     rowReverse: '',
-    isPlay: app.globalData.isPlay
+    isPlay: app.globalData.isPlay,
   },
   /**
    * 生命周期函数--监听页面加载

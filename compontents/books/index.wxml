@@ -3,7 +3,7 @@
     <view class="search-form round">
       <text class="cuIcon-search"></text>
       <input type="text" placeholder="搜索" confirm-type="search" bindfocus="searchBookHandler"></input>
-      <button class="cu-btn round">取消</button>
+      <button class="cu-btn round" bindtap="cancel">取消</button>
     </view>
   </view>
   <view class="book-list" wx:if="{{showBookList}}">

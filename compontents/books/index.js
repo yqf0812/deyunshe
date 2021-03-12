@@ -22,6 +22,11 @@ Component({
       this.setData({
         showBookList: false
       })
+    },
+    cancel() {
+      this.setData({
+        showBookList: true
+      })
     }
   }
 })
