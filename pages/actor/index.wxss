@@ -6,7 +6,7 @@
 }
 .header {
   height: 200px;
-  background: url('https://hbimg.huabanimg.com/47f5c45f324fff0022ab271ddc6ed4ba47252edc16306e-WLAgbq_fw658/format/webp');
+  background: url('https://hbimg.huabanimg.com/d8e466a7a92c5b5157115913909fc14e3fa643f519a722-HbF6cU_fw658/format/webp');
   background-size: 100% 100%;
   display: flex;
   justify-content: center;

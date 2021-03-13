@@ -1,30 +1,13 @@
 <view class="actors">
-    <view class="actor-img-box">
-        <image class="actor-img" mode="widthFix"
-        src="https://hbimg.huabanimg.com/c680db664347d1237ffb09cfaaae3ffe5f6e462a36a5c-agpYZX_fw658/format/webp"
-        />
-        <image class="actor-img" mode="widthFix"
-        src="https://hbimg.huabanimg.com/c680db664347d1237ffb09cfaaae3ffe5f6e462a36a5c-agpYZX_fw658/format/webp"
-        />
-        <image class="actor-img" mode="widthFix"
-        src="https://hbimg.huabanimg.com/c680db664347d1237ffb09cfaaae3ffe5f6e462a36a5c-agpYZX_fw658/format/webp"
-        />
-        <image class="actor-img" mode="widthFix"
-        src="https://hbimg.huabanimg.com/c680db664347d1237ffb09cfaaae3ffe5f6e462a36a5c-agpYZX_fw658/format/webp"
-        />
-    </view>
-    <view class="branch">
-        <view class="top">
-            <image bindtap="actorInfo" src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-        </view>
-        <view class="top">
-            <image src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-            <image src="/images/1615281646398445.png"></image>
-        </view>
+    <!-- <image class="hw" src="/images/yun.jpg"></image> -->
+    <view class="center">
+        <image bindtap="actorInfo" class="hw" src="http://127.0.0.1:3000/images/yun.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/he.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/jiu.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/xiao.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/long.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/teng.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/si.jpg"></image>
+        <image class="hw" src="http://127.0.0.1:3000/images/hai.jpg"></image>
     </view>
 </view>

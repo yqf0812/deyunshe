@@ -4,22 +4,8 @@
 page {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
-.video-tab {
+.content {
   flex: 1;
-  height: 0;
-}
-.van-tabs {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.van-tabs__content {
-  flex: 1;
-  height: 0;
-  overflow-y: auto !important;
-}
-.tab-item {
-  flex: 1;
-  height: 0;
 }

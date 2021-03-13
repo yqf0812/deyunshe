@@ -1,27 +1,33 @@
 <!--pages/index/index.wxml-->
 <cu-play rowReverse="{{rowReverse}}" bindtouchmove="buttonMove" bindtouchstart="buttonStart" bindtouchend="buttonEnd" style="position: absolute;top:{{buttonTop}}px;left:{{buttonLeft}}px;z-index:99999999" wx:if="{{isPlay}}"></cu-play>
 <cu-custom class="custom-bar" bgColor="bg-gradual-blue"><view slot="content">德云小剧场</view></cu-custom>
-<van-tabs class="video-tab" swipeable>
-  <van-tab class="tab-item" title="视频" bindtouchstart="touchStart" bindtouchend="touchEnd">
-    <cu-video class="content" ifScroll="{{ifScroll}}"></cu-video>
+<van-tabs class="video-tab" swipeable active="{{ active }}" bind:change="onChange">
+  <van-tab title="视频">
   </van-tab>
   <van-tab title="图片">
-    <cu-img></cu-img>
+    <!-- <cu-img></cu-img> -->
   </van-tab>
   <van-tab title="新闻">
-    <cu-new></cu-new>
+    <!-- <cu-new></cu-new> -->
   </van-tab>
-  <van-tab class="tab-item" title="电台">
-    <cu-radio></cu-radio>
+  <van-tab title="电台">
+    <!-- <cu-radio></cu-radio> -->
   </van-tab>
   <van-tab title="演员">
-  <cu-actor></cu-actor>
+  <!-- <cu-actor></cu-actor> -->
   </van-tab>
-  <van-tab class="tab-item" title="书籍">
-  <cu-book class="content"></cu-book>
+  <van-tab title="书籍">
+  <!-- <cu-book class="content"></cu-book> -->
   </van-tab>
   <van-tab title="语录">
-    <cu-quotation></cu-quotation>
+    <!-- <cu-quotation></cu-quotation> -->
   </van-tab>
 </van-tabs>
+<view class="content">
+    <cu-video wx:if="{{active === 0}}" class="content" scrollHeight="{{scrollHeight}}"></cu-video>
+    <cu-img wx:if="{{active === 1}}" class="content" scrollHeight="{{scrollHeight}}"></cu-img>
+    <cu-radio wx:if="{{active === 3}}" class="content"></cu-radio>
+    <cu-actor wx:if="{{active === 4}}" class="content"></cu-actor>
+  <!-- <cu-video wx:if="{{active === 0}}" class="content"></cu-video> -->
+</view>
 <van-toast id="van-toast"/>

@@ -28,16 +28,18 @@ Page({
     buttonLeft: 0,
     rowReverse: '',
     isPlay: app.globalData.isPlay,
+    active: 0,
+    scrollHeight: 0
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(app.globalData)
     this.setData({
       windowHeight: app.globalData.windowHeight,
       windowWidth: app.globalData.windowWidth
     })
+    
   },
 
   /**
@@ -51,8 +53,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(app.globalData)
-    this.setData({
+    let that = this;
+    let query = wx.createSelectorQuery();
+    query.select('.content').boundingClientRect(
+      function(rect) {
+        that.setData({
+          scrollHeight: rect.height
+        })
+      }
+    ).exec();
+    that.setData({
       isPlay: app.globalData.isPlay
     })
   },
@@ -82,10 +92,6 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log(1)
-    wx.showLoading({
-      title: '玩命加载中',
-      })
   },
 
   /**
@@ -93,5 +99,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onChange(event) {
+    this.setData({
+      active: event.detail.index
+    })
   }
 })

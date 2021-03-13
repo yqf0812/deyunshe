@@ -1,29 +1,21 @@
 /* compontents/actors/index.wxss */
 .actors {
     height: 100%;
+    background: url('https://hbimg.huabanimg.com/d04d862e25828f6b0c8ba97d22605e66c917e1f615ff40-utJJqz_fw658/format/webp'); 
+    background-size: 100% 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.actor-img-box {
-    width: 65%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.hw {
+    width: 150rpx;
+    height: 150rpx;
+    margin-bottom: 30rpx;
 }
-.actors .actor-img {
-    width: 40%;
-    margin-top: 20rpx;
-}
-.branch {
-    width: 100%;
-}
-.top {
-    padding: 40rpx 40rpx 0 40rpx;
+.center {
+    width: 700rpx;
+    margin-top: -71rpx;
     display: flex;
     justify-content: space-between;
-}
-.branch image {
-    width: 100rpx;
-    height: 100rpx;
+    flex-wrap: wrap;
 }

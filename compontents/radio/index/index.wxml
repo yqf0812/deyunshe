@@ -1,15 +1,25 @@
 <view class="radio">
-  <view class="search-box">
-    <view class="search" bindtap="search">
+  <view class="cu-bar bg-white search">
+    <view class="search-form round">
       <text class="cuIcon-search"></text>
-      <text style="margin-left:10px">请输入关键字</text>
+      <input type="text" disabled placeholder="搜索" confirm-type="search" bindtap="search"></input>
     </view>
   </view>
   <view class="radio-list">
-    <cu-radiolist></cu-radiolist>
-    <cu-radiolist></cu-radiolist>
-    <cu-radiolist></cu-radiolist>
-    <cu-radiolist></cu-radiolist>
-    <cu-radiolist></cu-radiolist>
+    <scroll-view class="scroll11" enable-flex="true" bindscrolltolower='lower' style="height: {{scrollHeight}}px;width:{{scrollWidth}}px" scroll-y="true">
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+      <cu-radiolist></cu-radiolist>
+    </scroll-view>
   </view>
 </view>

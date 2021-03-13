@@ -1,10 +1,9 @@
 <view class="text-gray text-sm text-right padding cu-opt">
-  <view>
+  <view wx:if="showPlayNum">
     <text class="cuIcon-playfill margin-lr-xs"></text> {{playNum}}播放
   </view>
   <view>
-    <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
-    <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
-    <text class="cuIcon-messagefill margin-lr-xs" bindtap="goComment"></text> 30
+    <text wx:if="showLikeNum" class="{{!isLike ? 'cuIcon-like' : 'cuIcon-likefill font-red'}} lg text-gray" bindtap="like"></text> {{likeNum}}
+    <text style="margin-left: 40rpx" wx:if="showCommentNum" class="cuIcon-messagefill margin-lr-xs" bindtap="goComment"></text> {{commentNum}}
   </view>
 </view>

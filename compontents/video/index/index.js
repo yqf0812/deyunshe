@@ -6,18 +6,68 @@ Component({
    * 组件的属性列表
    */
   properties: {
+    scrollHeight: {
+      type: Number,
+      value: 0
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
+    arr: [
+      {
+        auth: '管理员',
+        createTime: '12131323',
+        playNum: 10,
+        title: 'sdasd',
+        url: "http://127.0.0.1:3000/video/01.mp4",
+        vid: "20210118135856SLRM"
+      },
+      {
+        auth: '管理员',
+        createTime: '12131323',
+        playNum: 10,
+        title: 'sdasd',
+        url: "http://127.0.0.1:3000/video/01.mp4",
+        vid: "20210118135856SLRM"
+      },
+      {
+        auth: '管理员',
+        createTime: '12131323',
+        playNum: 10,
+        title: 'sdasd',
+        url: "http://127.0.0.1:3000/video/01.mp4",
+        vid: "20210118135856SLRM"
+      },
+      {
+        auth: '管理员',
+        createTime: '12131323',
+        playNum: 10,
+        title: 'sdasd',
+        url: "http://127.0.0.1:3000/video/01.mp4",
+        vid: "20210118135856SLRM"
+      },
+      {
+        auth: '管理员',
+        createTime: '12131323',
+        playNum: 10,
+        title: 'sdasd',
+        url: "http://127.0.0.1:3000/video/01.mp4",
+        vid: "20210118135856SLRM"
+      }
+    ],
     videoList: [],
     videoCtx: '',
     playVideo: '', //正在播放的视频id
     windowInfo: {}, // 屏幕信息,
     touchx: 0,
     touchy: 0,
+    isBottom: false,
+    starty: 0, //开始的位置x
+    endy: 0, //结束的位置y
+    margintop: 0, //滑动下拉距离
   },
   lifetimes: {
     attached: function() {
@@ -67,55 +117,63 @@ Component({
         videoContextCurrent.play()
       }
     },
-    touchStart(e) { // 页面滑动事件开始
+    // touchStart(e) { // 页面滑动事件开始
+    //   this.setData({
+    //     touchx: e.changedTouches[0].clientX,
+    //     touchy: e.changedTouches[0].clientY
+    //   })
+    // },
+    // touchEnd(e) { // 页面滑动事件结束
+    //   var that = this;
+    //   let x = e.changedTouches[0].clientX;
+    //   let y = e.changedTouches[0].clientY;
+    //   let turn = "";
+    //   if (x - that.data.touchx > 50 && Math.abs(y - that.data.touchy) < 50) {      //右滑
+    //     turn = "right";
+    //   } else if (x - that.data.touchx < -50 && Math.abs(y - that.data.touchy) < 50) {   //左滑
+    //     turn = "left";
+    //   }
+    //   if(y - that.data.touchy > 50 && Math.abs(x - that.data.touchx) < 50){ //下滑
+    //     turn = "down";
+    //   }else if(y - that.data.touchy < -50 && Math.abs(x - that.data.touchx) < 50){ //上滑
+    //     turn="up";
+    //   }
+    //   if (turn === 'left') {
+    //     var videoClass = '.video-' + this.data.playVideo;
+    //     var query = wx.createSelectorQuery().in(this);
+    //     query.select(videoClass).boundingClientRect();
+    //     query.exec((res) => {
+    //       var videoContextPrev = wx.createVideoContext('modelV' + this.data.playVideo, this);
+    //       videoContextPrev.pause();
+    //     })
+    //   }
+    //   //根据方向进行操作
+    //   if(turn === 'down'){
+    //     //下滑触发操作
+    //   }
+    //   if(turn === 'up'){
+    //     //下滑触发操作
+    //     var videoClass = '.video-' + this.data.playVideo;
+    //     var query = wx.createSelectorQuery().in(this);
+    //     query.select(videoClass).boundingClientRect();
+    //     query.exec((res) => {
+    //       if(res.length) {
+    //         var top = res[0].top;
+    //         if (Math.abs(top) > 200) {
+    //           var videoContextPrev = wx.createVideoContext('modelV' + this.data.playVideo, this);
+    //           videoContextPrev.pause();
+    //         }
+    //       }
+    //     })
+    //   }
+    // },
+    lower() {
       this.setData({
-        touchx: e.changedTouches[0].clientX,
-        touchy: e.changedTouches[0].clientY
+        isBottom: true
       })
-    },
-    touchEnd(e) { // 页面滑动事件结束
-      var that = this;
-      let x = e.changedTouches[0].clientX;
-      let y = e.changedTouches[0].clientY;
-      let turn = "";
-      if (x - that.data.touchx > 50 && Math.abs(y - that.data.touchy) < 50) {      //右滑
-        turn = "right";
-      } else if (x - that.data.touchx < -50 && Math.abs(y - that.data.touchy) < 50) {   //左滑
-        turn = "left";
-      }
-      if(y - that.data.touchy > 50 && Math.abs(x - that.data.touchx) < 50){ //下滑
-        turn = "down";
-      }else if(y - that.data.touchy < -50 && Math.abs(x - that.data.touchx) < 50){ //上滑
-        turn="up";
-      }
-      if (turn === 'left') {
-        var videoClass = '.video-' + this.data.playVideo;
-        var query = wx.createSelectorQuery().in(this);
-        query.select(videoClass).boundingClientRect();
-        query.exec((res) => {
-          var videoContextPrev = wx.createVideoContext('modelV' + this.data.playVideo, this);
-          videoContextPrev.pause();
-        })
-      }
-      //根据方向进行操作
-      if(turn === 'down'){
-        //下滑触发操作
-      }
-      if(turn === 'up'){
-        //下滑触发操作
-        var videoClass = '.video-' + this.data.playVideo;
-        var query = wx.createSelectorQuery().in(this);
-        query.select(videoClass).boundingClientRect();
-        query.exec((res) => {
-          if(res.length) {
-            var top = res[0].top;
-            if (Math.abs(top) > 200) {
-              var videoContextPrev = wx.createVideoContext('modelV' + this.data.playVideo, this);
-              videoContextPrev.pause();
-            }
-          }
-        })
-      }
+      this.setData({
+        videoList: this.data.videoList.concat(this.data.arr)
+      })
     },
   }
 })

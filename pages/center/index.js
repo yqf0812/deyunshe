@@ -6,7 +6,8 @@ Page({
    */
   data: {
     islogin: false,
-    showMoney: false
+    showMoney: false,
+    modalName: ''
   },
 
   /**
@@ -83,6 +84,16 @@ Page({
       success: res => {
         console.log(res)
       }
+    })
+  },
+  aboutDeyunshe() {
+    this.setData({
+      modalName: 'Image'
+    })
+  },
+  hideModal() {
+    this.setData({
+      modalName: ''
     })
   }
 })
